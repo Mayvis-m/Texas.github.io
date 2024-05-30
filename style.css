@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    font-size: 15pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+header {
+    line-height: 60px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin-top: 12px;
+    background-color: white;
+    padding: 1%;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: larger;
+    background-color: gray;
+    margin: 30px;
+    color: white;
+    padding: 10px;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    color: red;
+    cursor: pointer;
+}
+
+section {
+    flex: 2 1 10%;
+    margin-top:20px;
+}
+
+aside {
+    float: right;
+    width: 300px;
+}
+
+#container {
+    display: flex;
+    position: relative;
+}
+
+table,th,td {
+    border:2px solid gray;
+}
+
+table {
+    margin-right: 25px;
+}
+
+#table-container {
+    margin-right: 25px;
+    margin-top: 220px;
+}
+
+
+#image-container {
+    position: relative;
+}
+
+#second-image-container {
+    position: absolute;
+    top: 10;
+    right: 50;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <script>
+            function submitForm() {
+                const email=document.getElementById("email").value;
+                const confirmEmail=document.getElementById("confirm-email").value;
+
+            if(email !== confirmEmail) {
+                alert("Email addresses do not match.");
+                return false;
+            }
+            else {
+                alert("Email addresses do match.");
+                return true;
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+
+        <header><h1>Contact Us</h1></header>
+
+        <main>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="name-of-city1.html" target="_blank">Capital</a>
+                <a href="name-of-city2.html" target="_blank">Houston</a>
+                <a href="name-of-city3.html" target="_blank">San Antonio</a>
+                <a href="contact-us.html" target="_blank">Contact Us</a>
+            </nav>
+
+            <form name="form">
+            <p>
+               <label for="first">First Name:</label>
+               <input type="text" name="first" id="first" placeholder="First Name">
+            </p>
+            <p>
+               <label for="last">Last Name:</label>
+               <input type="text" name="last" id="last" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="Email Address">
+            </p>
+            <p>
+                <label for="confirmEmail">Email Address:</label>
+                <input type="text" name="email" id="confirm-email" placeholder="Confirm Email Address">
+             </p>
+            <p>
+                <label for="question">Your Question:</label>
+                <input type="question" name="question" id="question" placeholder="Question">
+             </p>
+            <button onclick="submitForm()">Submit</button>
+            </form>
+
+            </main>
+    </body>
+</html>
